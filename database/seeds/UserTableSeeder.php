@@ -2,6 +2,7 @@
 
 use App\Models\Auth\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class UserTableSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(User::class)->create(['email'=>'abdul@webequator.com', 'password' => 'Xplm@911']);
+        factory(User::class)->create(['email'=>'abdul@webequator.com', 'password' => Hash::make('Xplm@911')]);
         factory(User::class, 30)->create();
     }
 }
