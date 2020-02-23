@@ -9,7 +9,7 @@
             <div class="login-header">
                 <div class="brand">
                      <b>Authentication</b>
-                    <small>LaraVue App</small>
+                    <small>LaraReact App</small>
                 </div>
                 <div class="icon">
                     <i class="fa fa-lock"></i>

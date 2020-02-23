@@ -22,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="/" class="navbar-brand">
-                <img src="/images/vue-laravel.png" alt="Laravel Vue App" class="brand-image">
+                <img src="/images/laravel-react.png" alt="Laravel React App" class="brand-image">
                 </span>
             </a>
         </div>

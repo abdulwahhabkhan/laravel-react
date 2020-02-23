@@ -1,100 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+    <title>Laravel React - Lading page </title>
+    <link href="{{ asset('css/landing.css') }}" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+</head>
+<body>
+<div id="page-container">
+    <div id="header" class="header navbar navbar-expand-md navbar-transparent fixed-top">
+        <!-- begin container -->
+        <div class="container">
+            <!-- begin navbar-header -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="/" class="navbar-brand">
+                    <img src="/images/laravel-react.png" alt="Laravel React App" class="brand-image">
+                    </span>
+                </a>
             </div>
+            <!-- end navbar-header -->
+            <!-- begin navbar-collapse -->
+            <div class="collapse navbar-collapse" id="header-navbar">
+
+                <ul class="nav navbar-nav ml-md-auto">
+                    @if (Route::has('login'))
+                        @auth
+                            <li class="nav-item"><a href="/app" class="nav-link" data-click="scroll-to-target">Dashboard</a></li>
+                        @else
+                            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link" data-click="scroll-to-target">LOGIN</a></li>
+
+                            @if (Route::has('register'))
+                                <li class="nav-item"><a href="{{ route('register') }}" class="nav-link" data-click="scroll-to-target">REGISTER</a></li>
+                            @endif
+                        @endauth
+                    @endif
+                </ul>
+            </div>
+            <!-- end navbar-collapse -->
         </div>
-    </body>
+        <!-- end container -->
+    </div>
+    <div id="home" class="content has-bg home" style="height: 944px;">
+        <!-- begin content-bg -->
+        <div class="content-bg">
+            <img src="/images/home-bg.jpg" alt="Home">
+        </div>
+        <!-- end content-bg -->
+        <!-- begin container -->
+        <div class="container home-content">
+            <h1>Welcome to LaraReact</h1>
+            <h3>A demo application</h3>
+            <p>
+                This project is only for the study purpose, integration of Laravel with React. This application is purely for practicing the different aspects for Laravel API and ReactJS.
+            </p>
+            <p>
+
+            </p>
+        </div>
+        <!-- end container -->
+    </div>
+</div>
+</body>
 </html>
