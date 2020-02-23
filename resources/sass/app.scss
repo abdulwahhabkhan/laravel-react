@@ -1,8 +1,38 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+//fontawesome
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+// style.scss
+@import '~sweetalert2/src/variables';
+
+//$swal2-background: #990000;
+@import '~sweetalert2/src/sweetalert2';
+
+//select2
+@import "~vue-select/src/scss/vue-select.scss";
+
+//datetime bootstrap
+@import "~pc-bootstrap4-datetimepicker/src/sass/bootstrap-datetimepicker-build.css";
+
+//toast
+
+@import "~izitoast/dist/css/iziToast.min.css";
+
+//style
+@import "style/style";
+
+//ticket style
+@import "ticket";
+
+//slider
+@import '~vue-slider-component/theme/default.css';
+
+//custom style
+@import "style/custom";

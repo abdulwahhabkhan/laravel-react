@@ -1,0 +1,59 @@
+//Landing page stylesheet
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
+@import '~bootstrap/scss/bootstrap';
+// Color list
+$color-navy-blue:#34495e;
+$color-violet:#9b59b6;
+$color-blue:#3498db;
+$color-green:#00acac;
+$color-yellow:#ffb606;
+$color-orange:#e67e22;
+$color-red:#e74c3c;
+$color-red-deep:#c0392b;
+
+$color-text: #6a6c6f;
+//fontawesome
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "landing/welcome";
+@import "landing/auth";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text;
+    overflow-x: hidden;
+    font-size:0.85rem;
+}
+.header .navbar-nav > li > a {
+    color: #8F8E8E;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.header.navbar .navbar-nav > li > a:hover,
+.header.navbar.navbar-transparent .navbar-nav > li > a:hover{
+    color: $color-green;
+}
+.header .nav.navbar-nav .nav-item .nav-link{padding: 1.0rem .9375rem;}
+a {
+    color: $color-green;
+}
+.navbar-brand{padding:0px;}
+.navbar-brand img{max-height: 30px;}
+.col-form-label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.btn-primary{background-color: $color-navy-blue;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary,
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:hover, .btn-primary:focus{
+    background-color: #3f5872;
+    border-color: #3f5872;
+    color: #fff;
+}

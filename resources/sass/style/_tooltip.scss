@@ -1,0 +1,17 @@
+// tooltip
+.tooltip-inner {
+  background-color: $color-navy-blue;
+}
+
+.tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: $color-navy-blue;
+}
+.tooltip.bs-tooltip-right .arrow::before {
+  border-right-color: $color-navy-blue;
+}
+.tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $color-navy-blue;
+}
+.tooltip.bs-tooltip-left .arrow::before {
+  border-left-color: $color-navy-blue;
+}
