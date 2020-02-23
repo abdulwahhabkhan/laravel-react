@@ -13,7 +13,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(User::class)->create(['email'=>'abdul@webequator.com', 'password' => Hash::make('Xplm@911')]);
+        factory(User::class)->create(['email'=>'abdul@webequator.com', 'password' => '$2y$10$2dX36HtUXXHB.gC7YOkpV.6jzfEOK.UzJCKlueK5ANkkRFVYnd1WW']); //Xplm@911
         factory(User::class, 30)->create();
     }
 }
