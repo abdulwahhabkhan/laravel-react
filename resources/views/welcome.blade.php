@@ -48,7 +48,7 @@
     <div id="home" class="content has-bg home" style="height: 944px;">
         <!-- begin content-bg -->
         <div class="content-bg">
-            <img src="/images/home-bg.jpg" alt="Home">
+            <img src="/images/home-bg.png" alt="Home">
         </div>
         <!-- end content-bg -->
         <!-- begin container -->
