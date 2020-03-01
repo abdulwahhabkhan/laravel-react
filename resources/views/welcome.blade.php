@@ -55,12 +55,40 @@
         <div class="container home-content">
             <h1>Welcome to LaraReact</h1>
             <h3>A demo application</h3>
-            <p>
-                This project is only for the study purpose, integration of Laravel with React. This application is purely for practicing the different aspects for Laravel API and ReactJS.
-            </p>
-            <p>
-
-            </p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="row">
+                <!-- begin col-4 -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <div class="info">
+                            <h4 class="title">Laravel</h4>
+                            <p class="desc">Laravel API with Passport is used as backend with MySQL</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <div class="info">
+                            <h4 class="title">React</h4>
+                            <p class="desc">React frontend is used after interacting with backend</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <div class="info">
+                            <h4 class="title">Bootstrap</h4>
+                            <p class="desc">Bootstrap theme used style the contents</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+            </div>
         </div>
         <!-- end container -->
     </div>
